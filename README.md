@@ -33,6 +33,7 @@
       gap: 10px;
     }
 
+
     nav .logo img {
       width: 80px;
       height: 80px;
