@@ -2,120 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FOODie</title>
   <style>
     body {
-      
-          margin: 0 100px;
-          background-color: peru;
-        p
-    .nav {
-      width: 100%;
+  background: url('https://i.pinimg.com/236x/82/64/8a/82648a04ce072a2abb8053b72992fd0f.jpg') center/cover repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 90px;
+}
+
+    /* Navigation */
+    nav {
+      background: #f9f2e7;
+      padding: 15px 30px;
+      border-bottom: 3px solid peru;
       display: flex;
       justify-content: space-between;
-      align-items: left;
-      padding: 30px 0;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
-    .nav .logo b {
-      font-weight: 600;
-      font-family: sa
-      color: #000000;
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .nav .logo b {
+
+    nav .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    nav .logo span {
+      font-size: 28px;
+      font-family: "Brush Script MT", cursive;
       color: brown;
     }
-    .nav ul {
-      display: flex;
-      list-style: none;
-    }
-    .nav ul li {
-      margin-right: 30px;
-    }
-    .nav ul li a {
-      text-decoration: none;
-      color: #000000;
-      font-weight: 1000;
-      font-family: sans-serif;
-      font-size: 17px;
-    }https://g.co/about/2wkvkc
-      font-family: Arial, sans-serif;
-      margin: 0;
-      color: #333;
-      scroll-behavior: smooth;
-      background: linear-gradient(to bottom, #ffe699 0%, #ffe699 50%,  #ffe699 100%);
-    }
-    header {
-      background: url(https://share.google/SeHvlnKzVJT0P20VJ);
-      background-size: cover;
-      background-position: left;
-      padding: 25px;
-      color: white;
-      text-align: left;
-      border-bottom: 6px solid #peru
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      font-size: 2.2em;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    }
+
     nav ul {
       list-style: none;
       padding: 0;
-      margin: 12px 0 0;
+      margin: 0;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       gap: 18px;
     }
+
     nav a {
-      color: #42445A;
+      color: black;
       text-decoration: none;
       font-weight: bold;
       padding: 10px 16px;
       border: 2px solid peru;
       border-radius: 25px;
-      background: brown(255, 102, 153, 0.75);
       transition: all 0.3s ease;
     }
+
     nav a:hover {
-      background: #42445A;
-      color: #42445A;
+      background: black;
+      color: white;
       transform: scale(1.05);
     }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh; /* Full screen */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: peru;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: peru;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background: #b87333;
+    }
+
+    /* Sections */
     main {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 20px auto;
       padding: 0 16px;
     }
+
     section {
-      padding: 70px 0;
+      padding: 50px 0;
     }
+
     h2 {
-      border-bottom: 4px solid ;
-      padding-bottom: 6px;
-      margin-bottom: 25px;
-      font-size: 1.8em;
-      color: #1a1a00;
+      font-size: 2em;
+      color: black;
       text-align: center;
+      margin-bottom: 20px;
+      position: relative;
     }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: peru;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Menu styles */
     .menu-title {
-      text-align: center;
+      text-align: left;
       font-size: 2.5em;
       font-weight: bold;
-      color: #1a1a00;
+      color: peru;
       margin: 50px 0 20px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
     }
-    .menu-title span {
-      display: inline-block;
-      background: #fff0f6;
-      padding: 10px 20px;
-      border-radius: 15px;
-      border: 3px solid peru;
-    }
+
     .menu ul {
       list-style: none;
       padding: 0;
@@ -123,6 +157,7 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 35px;
     }
+
     .menu li {
       border-radius: 15px;
       padding: 15px;
@@ -131,143 +166,104 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .menu li:hover {
       transform: translateY(-8px);
       box-shadow: 0 10px 18px rgba(0,0,0,0.25);
     }
+
     .menu img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 12px;
-      border: 3px solid #ff99bb;
+      border: 3px solid peru;
       margin-bottom: 12px;
-      transition: transform 0.3s ease;
-    }
-    .menu li:hover img {
-      transform: scale(1.05);
-    }
-    .menu button {
-      margin-top: 8px;
-      padding: 10px 16px;
-      background: peru;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-    .menu button:hover {
-      background: peru
-      transform: scale(1.05);
-    }
-    .basket {
-      border: 2px dashed #ff99bb;
-      padding: 15px;
-      border-radius: 10px;
-      background: #fff0f6;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: url("https://www.toptal.com/designers/subtlepatterns/uploads/wood_pattern.png");
-      background-size: cover;
-      color: white;
-      font-weight: bold;
-      border-top: 5px solid #ff6699;
-    
-    
     }
   </style>
 </head>
 <body>
-  <header>
-      <div class="nav">
-    <div class="logo"><h1>Food<b>ie<section class="grid">
-<div class="content">
-<div class="content-left">
-<div class="info">
-  
-<h2>Order Your Best <br>Food anytime</h2>
-<p>Hey, Our delicious food is waiting for you, <br>
-</div>
-We are always near to you with fresh item of food </p>
 
-</div>
-<div class="content-right"></div>
-<img src="" alt=""></b></h1></div>
-      
+  <!-- Navigation -->
+  <header>
     <nav>
+      <div class="logo">
+        <img src="https://bcassetcdn.com/social/55suatdq2a/preview.png" alt="Foodie Logo">
+        <span>FOODie</span>
+      </div>
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#menu">MENU</a></li>
         <li><a href="#news">NEWS</a></li>
-        <li><a href="#about us">ABOUT US</a></li>
+        <li><a href="#about-us">ABOUT US</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <div class="menu-title"><span> Menu 🍗</span></div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>FOODie</span></h1>
+      <p>Delicious Filipino dishes made with love, served fresh every day.</p>
+      <a href="#ulam" class="btn">🍴 Order Now</a>
+    </div>
+  </section>
 
-    <!-- Donuts -->
+  <main>
+    <!-- Ulam -->
     <section id="menu" class="menu">
       <h2>Ulam Recipes</h2>
       <ul>
-        <li><img src="https://images.unsplash.com/photo-1600891965055-d78d4a46b9b0" alt="Pritong Bangus"><p>Pritong Bangus - ₱180</p></li>
-        <li><img src="https://share.google/v6fISgBPLDftfuuXH" alt="Strawberry Donut"><p>Butter Shrimp- ₱220</p><b</li>
-        <li><img src="" alt="Nilagang Baka"><p>Glazed Nilagang Baka - ₱420</p></li>
-        <li><img src="" alt="Lechon Baka"><p>Lechon Baka - ₱450</p>
-        <li><img src="https://images.unsplash.com/photo-1593800132587-1ff5d26ab9dd" alt="Matcha Donut"><p>Pork Sisig - ₱170</p></li>
-        <li><img src="https://images.unsplash.com/photo-1621619851367-83a25d816f5a" alt="Bagnet Kare Kare"><p>Bagnet Kare Kare - ₱400</p></li>
-        <li><img src="https://images.unsplash.com/photo-1621590977284-f98a32956543" alt="Adobong Manok"><p>Adobong Manok - ₱350</p></li>
-        <li><img src="https://images.unsplash.com/photo-1590080875831-3de1d0e480a2" alt="Bicol Express"><p>Bicol Express - ₱290</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPChO2IPYFIowDQNlkxNdfDpaSoFrL6M9TQ&s" alt="Pritong Bangus"><p>Pritong Bangus - ₱180</p></li>
+        <li><img src="https://www.wellplated.com/wp-content/uploads/2019/05/Garlic-Butter-Shrimp-recipe.jpg" alt="Butter Shrimp"><p>Butter Shrimp - ₱220</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kVajD8ZwUBkmAT873K3u7ubyb5lrIY-Z5w&s" alt="Nilagang Baka"><p>Nilagang Baka - ₱420</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFDpSTvKYeOfnTyowuTO7s3Y02a3c3i_b_Q&s" alt="Lechon Baka"><p>Lechon Baka - ₱450</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ13pN_sbHj9ioDyTKwxbryDZ80cJYAzGVA&s" alt="Pork Sisig"><p>Pork Sisig - ₱170</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3Pi-AqV7FzSgapYH5vp2ggPN2WMAgFeZbw&s" alt="Bagnet Kare Kare"><p>Bagnet Kare Kare - ₱400</p></li>
+        <li><img src="https://www.foxyfolksy.com/wp-content/uploads/2014/03/Filipino-Adobo.jpg" alt="Adobong Manok"><p>Adobong Manok - ₱350</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKh1GMWLnDdjV8BVigPZj0_1_lOn37TMmxDQ&s" alt="Bicol Express"><p>Bicol Express - ₱290</p></li>
       </ul>
     </section>
 
-    <!-- Drinks -->
-    <section id="drinks" class="menu">
-      <h2>Mga Pancit </h2>
-      <h3>FAMILY SIZE</h3>
+    <!-- Desserts -->
+    <section id="desserts" class="menu">
+      <h2>Panghimagas</h2>
       <ul>
-        <li><img src="https://images.unsplash.com/photo-1542435503-956c469947f6" alt="Pancit Malabon"><p>Pancit Malabon - ₱500</p></li>
-        <li><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="Sphagetti"><p>Sphagetti - ₱70</p></li>
-        <li><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Carbonara"><p>Carbonara - ₱500</p></li>
-        <li><img src="https://images.unsplash.com/photo-1527168027773-0cc890c4d0d0" alt="Pancit Bihon"><p>Pancit Bihon - ₱500</p></li>
-        <li><img src="https://images.unsplash.com/photo-1587731738513-78c7d9bd0e56" alt="Bam I"><p>Bam I - ₱500</p></li>
-        <li><img src="https://images.unsplash.com/photo-1617196034796-168f5e0e650a" alt="Iced Latte"><p>Iced Latte - ₱65</p><button onclick="addToBasket('Iced Latte',65)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1617191518809-9a9e688e06ad" alt="Lemonade"><p>Lemonade - ₱55</p><button onclick="addToBasket('Lemonade',55)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1617191331492-1df220ad9d82" alt="Green Tea"><p>Green Tea - ₱45</p><button onclick="addToBasket('Green Tea',45)">Add</button></li>
+        <li><img src="https://www.thespruceeats.com/thmb/bqq_P7YZtu4Br9kPHqVkjib1QhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.jpg" alt="Halo-Halo"><p>Halo-Halo - ₱75</p></li>
+        <li><img src="https://bitesbybianca.com/wp-content/uploads/2024/12/filipino-leche-flan-cover-1.jpg" alt="Leche Flan"><p>Leche Flan - ₱100</p></li>
+        <li><img src="https://www.seriouseats.com/thmb/cXLaFRa5DV9S9wtY3oQ01QcU-Jc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Beauty_1-20ff60406a904cd7b35832eaef4ff585.jpg" alt="Bibingka"><p>Bibingka - ₱65</p></li>
+        <li><img src="https://flouredframe.com/wp-content/uploads/2019/12/filipino-puto-ft-image-1200x1200-1.jpg" alt="Puto"><p>Puto - ₱50</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXq6HZ1b6xKjgT0TAvflfCAYCK7aSgM9lf0g&s" alt="Biko"><p>Biko - ₱75</p></li>
+        <li><img src="https://flouredframe.com/wp-content/uploads/2020/01/taho-ft-image-1200x1200-1.jpg" alt="Taho"><p>Taho - ₱50</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKms7G0Ud3W0BKEC7pLhAegVAbmIH05AKuw&s" alt="Bilo-Bilo"><p>Bilo-Bilo - ₱75</p></li>
+        <li><img src="https://travellingfoodie.net/wp-content/uploads/2023/08/Salu-Salo-FV-Foods-Toronto-Travelling-Foodie-768x960.jpg.webp" alt="Turon"><p>Turon - ₱45</p></li>
       </ul>
     </section>
 
-    <!-- Cakes -->
-    <section id="cakes" class="menu">
-      <h2>Cakes</h2>
-      <ul>
-        <li><img src="https://images.unsplash.com/photo-1606890737304-56a5a6a1d3b6" alt="Chocolate Cake"><p>Chocolate Cake - ₱120</p><button onclick="addToBasket('Chocolate Cake',120)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Strawberry Cake"><p>Strawberry Cake - ₱130</p><button onclick="addToBasket('Strawberry Cake',130)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1617196034843-ef04e3d6b7a2" alt="Red Velvet"><p>Red Velvet - ₱150</p><button onclick="addToBasket('Red Velvet',150)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484d5" alt="Blueberry Cheesecake"><p>Blueberry Cheesecake - ₱170</p><button onclick="addToBasket('Blueberry Cheesecake',170)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1603079793489-94f6f85b50c5" alt="Carrot Cake"><p>Carrot Cake - ₱140</p><button onclick="addToBasket('Carrot Cake',140)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1617191518559-4dcd4708bafc" alt="Tiramisu"><p>Tiramisu - ₱160</p><button onclick="addToBasket('Tiramisu',160)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc" alt="Vanilla Cake"><p>Vanilla Cake - ₱110</p><button onclick="addToBasket('Vanilla Cake',110)">Add</button></li>
-        <li><img src="https://images.unsplash.com/photo-1617191518981-3121a4d6a0a3" alt="Ube Cake"><p>Ube Cake - ₱140</p></li>
-      </ul>
+    <!-- News -->
+    <section id="news">
+      <h2>News</h2>
+      <img src="https://img.freepik.com/free-vector/summer-discount-banners-restaurant_23-2147563873.jpg?semt=ais_incoming&w=740&q=80" alt="Summer Promo" style="width:100%; max-width:600px; display:block; margin:auto;">
     </section>
-    <!-- About -->
-    <section id="about">
+
+    <!-- About Us -->
+    <section id="about-us">
       <h2>About Us</h2>
-      <p style="text-align:center; max-width:700px; margin:auto;">
-At FOODie, food is more than just a meal — it’s our way of sharing happiness. Every dish we serve is made with care, using fresh ingredients and a passion for flavor.
-
-We’re grateful to be part of your table and your story. Thank you for supporting us, and we look forward to serving you again soon!
-
+      <p style="text-align:center; max-width:800px; margin:auto; line-height:1.6;">
+        At FOODie, food is more than just a meal — it’s our way of sharing happiness.  
+        Every dish we serve is made with care, using fresh ingredients and a passion for flavor.  
+        We’re grateful to be part of your table and your story. Thank you for supporting us,  
+        and we look forward to serving you again soon!
       </p>
+      
+      <div style="text-align:center; margin-top:20px; line-height:1.8;">
+        📍 <b>Location:</b><br>
+        Kay Talise St. Dr. A. Santos Ave., Brgy San Dionision, Parañaque City <br><br>
+        🕒 <b>Open:</b><br>
+        Monday to Friday — 9:00 AM to 8:00 PM
+      </div>
     </section>
   </main>
-  </script>
+
 </body>
 </html>
