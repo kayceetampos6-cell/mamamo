@@ -69,9 +69,9 @@
       transform: scale(1.05);
     }
 
-    /* Hero Section */
-    .hero {
-      height: 100vh; /* Full screen */
+    /* logo*/
+    .bright {
+      height: 100vh;
       width: 100%;
       display: flex;
       align-items: center;
@@ -83,21 +83,21 @@
       padding: 20px;
     }
 
-    .hero h1 {
+    .bright h1 {
       font-size: 3em;
       margin-bottom: 15px;
     }
 
-    .hero h1 span {
+    .bright h1 span {
       color: peru;
     }
 
-    .hero p {
+    .bright p {
       font-size: 1.2em;
       margin-bottom: 25px;
     }
 
-    .hero .btn {
+    .bright .khem {
       display: inline-block;
       padding: 12px 25px;
       background: peru;
@@ -108,11 +108,11 @@
       transition: 0.3s ease;
     }
 
-    .hero .btn:hover {
+    .bright .khem:hover {
       background: #b87333;
     }
 
-    /* Sections */
+    /* picture */
     main {
       max-width: 1000px;
       margin: 20px auto;
@@ -135,7 +135,7 @@
       content: "";
       display: block;
       width: 80px;
-      height: 4px;
+      height: 6px;
       background: peru;
       margin: 8px auto 0;
       border-radius: 2px;
@@ -149,21 +149,21 @@
       color: peru;
       margin: 50px 0 20px;
     }
-
+/*===ulam to panghimagas===*/
     .menu ul {
       list-style: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 35px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 50px;
     }
 
     .menu li {
-      border-radius: 15px;
-      padding: 15px;
-      background: #fff;
+      border-radius: 60px;
+      padding: 20px;
+      background: #FFF7DD;
       text-align: center;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+     
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -174,10 +174,10 @@
 
     .menu img {
       width: 100%;
-      height: 200px;
+      height: 190px;
       object-fit: cover;
       border-radius: 12px;
-      border: 3px solid peru;
+      border: 3px dashed peru;
       margin-bottom: 12px;
     }
   </style>
@@ -200,37 +200,37 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
+  <!-- Home Section -->
+  <div id="home" class="bright">
+    <div class="brightwin">
       <h1>Welcome to <span>FOODie</span></h1>
       <p>Delicious Filipino dishes made with love, served fresh every day.</p>
-      <a href="#ulam" class="btn">🍴 Order Now</a>
+      <a href="#menu" class="khem">🍴 Order Now</a>
     </div>
-  </section>
+  </div>
 
   <main>
     <!-- Ulam -->
-    <section id="menu" class="menu">
+    <div id="menu" class="menu">
       <h2>Ulam Recipes</h2>
       <ul>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPChO2IPYFIowDQNlkxNdfDpaSoFrL6M9TQ&s" alt="Pritong Bangus"><p>Pritong Bangus - ₱180</p></li>
-        <li><img src="https://www.wellplated.com/wp-content/uploads/2019/05/Garlic-Butter-Shrimp-recipe.jpg" alt="Butter Shrimp"><p>Butter Shrimp - ₱220</p></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kVajD8ZwUBkmAT873K3u7ubyb5lrIY-Z5w&s" alt="Nilagang Baka"><p>Nilagang Baka - ₱420</p></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFDpSTvKYeOfnTyowuTO7s3Y02a3c3i_b_Q&s" alt="Lechon Baka"><p>Lechon Baka - ₱450</p></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ13pN_sbHj9ioDyTKwxbryDZ80cJYAzGVA&s" alt="Pork Sisig"><p>Pork Sisig - ₱170</p></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3Pi-AqV7FzSgapYH5vp2ggPN2WMAgFeZbw&s" alt="Bagnet Kare Kare"><p>Bagnet Kare Kare - ₱400</p></li>
-        <li><img src="https://www.foxyfolksy.com/wp-content/uploads/2014/03/Filipino-Adobo.jpg" alt="Adobong Manok"><p>Adobong Manok - ₱350</p></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKh1GMWLnDdjV8BVigPZj0_1_lOn37TMmxDQ&s" alt="Bicol Express"><p>Bicol Express - ₱290</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPChO2IPYFIowDQNlkxNdfDpaSoFrL6M9TQ&s" "Pritong Bangus"><p>Pritong Bangus - ₱180</p></li>
+        <li><img src="https://www.wellplated.com/wp-content/uploads/2019/05/Garlic-Butter-Shrimp-recipe.jpg" "Butter Shrimp"><p>Butter Shrimp - ₱220</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kVajD8ZwUBkmAT873K3u7ubyb5lrIY-Z5w&s" "Nilagang Baka"><p>Nilagang Baka - ₱420</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFDpSTvKYeOfnTyowuTO7s3Y02a3c3i_b_Q&s" "Lechon Baka"><p>Lechon Baka - ₱450</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ13pN_sbHj9ioDyTKwxbryDZ80cJYAzGVA&s" "Pork Sisig"><p>Pork Sisig - ₱170</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3Pi-AqV7FzSgapYH5vp2ggPN2WMAgFeZbw&s" "Bagnet Kare Kare"><p>Bagnet Kare Kare - ₱400</p></li>
+        <li><img src="https://www.foxyfolksy.com/wp-content/uploads/2014/03/Filipino-Adobo.jpg" "Adobong Manok"><p>Adobong Manok - ₱350</p></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKh1GMWLnDdjV8BVigPZj0_1_lOn37TMmxDQ&s" "Bicol Express"><p>Bicol Express - ₱290</p></li>
       </ul>
-    </section>
+    </div>
 
-    <!-- Desserts -->
-    <section id="desserts" class="menu">
+    <!-- Panghimagas-->
+    <div id="menu" class="menu">
       <h2>Panghimagas</h2>
       <ul>
-        <li><img src="https://www.thespruceeats.com/thmb/bqq_P7YZtu4Br9kPHqVkjib1QhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.jpg" alt="Halo-Halo"><p>Halo-Halo - ₱75</p></li>
-        <li><img src="https://bitesbybianca.com/wp-content/uploads/2024/12/filipino-leche-flan-cover-1.jpg" alt="Leche Flan"><p>Leche Flan - ₱100</p></li>
+        <li><img src="https://www.thespruceeats.com/thmb/bqq_P7YZtu4Br9kPHqVkjib1QhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.jpg" "Halo-Halo"><p>Halo-Halo - ₱75</p></li>
+        <li><img src="https://bitesbybianca.com/wp-content/uploads/2024/12/filipino-leche-flan-cover-1.jpg" "Leche Flan"><p>Leche Flan - ₱100</p></li>
         <li><img src="https://www.seriouseats.com/thmb/cXLaFRa5DV9S9wtY3oQ01QcU-Jc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Beauty_1-20ff60406a904cd7b35832eaef4ff585.jpg" alt="Bibingka"><p>Bibingka - ₱65</p></li>
         <li><img src="https://flouredframe.com/wp-content/uploads/2019/12/filipino-puto-ft-image-1200x1200-1.jpg" alt="Puto"><p>Puto - ₱50</p></li>
         <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXq6HZ1b6xKjgT0TAvflfCAYCK7aSgM9lf0g&s" alt="Biko"><p>Biko - ₱75</p></li>
@@ -238,16 +238,16 @@
         <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKms7G0Ud3W0BKEC7pLhAegVAbmIH05AKuw&s" alt="Bilo-Bilo"><p>Bilo-Bilo - ₱75</p></li>
         <li><img src="https://travellingfoodie.net/wp-content/uploads/2023/08/Salu-Salo-FV-Foods-Toronto-Travelling-Foodie-768x960.jpg.webp" alt="Turon"><p>Turon - ₱45</p></li>
       </ul>
-    </section>
+    </div>
 
     <!-- News -->
-    <section id="news">
+    <div id="news">
       <h2>News</h2>
       <img src="https://img.freepik.com/free-vector/summer-discount-banners-restaurant_23-2147563873.jpg?semt=ais_incoming&w=740&q=80" alt="Summer Promo" style="width:100%; max-width:600px; display:block; margin:auto;">
-    </section>
+    </div>
 
     <!-- About Us -->
-    <section id="about-us">
+    <div id="about-us">
       <h2>About Us</h2>
       <p style="text-align:center; max-width:800px; margin:auto; line-height:1.6;">
         At FOODie, food is more than just a meal — it’s our way of sharing happiness.  
@@ -262,7 +262,7 @@
         🕒 <b>Open:</b><br>
         Monday to Friday — 9:00 AM to 8:00 PM
       </div>
-    </section>
+    </div>
   </main>
 
 </body>
